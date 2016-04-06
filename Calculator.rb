@@ -6,27 +6,24 @@ class Calculator
 		@result = value
 	end
 
-	def +(value = 0)
+	def add(value = 0)
 		@result += value if value.is_a? Numeric
 		self
 	end
 
-	def -(value = 0)
+	def minus(value = 0)
 		@result -= value if value.is_a? Numeric
 		self
 	end
 
-	def *(value = 1)
+	def multiply(value = 1)
 		@result *= value if value.is_a? Numeric
 		self
 	end
 
-	def /(value = 1)
+	def divided(value = 1)
 		@result /= value if value.is_a? Numeric
 		self
 	end
 
 end
-
-a = Calculator.new(2)
-a + 3 - 2
